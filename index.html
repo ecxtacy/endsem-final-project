@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhook Lagi</title>
+
+    <!-- Adding font-family to Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Connecting the stylesheets -->
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Bhook Lagi</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-bar" id = "hello">
+            <ul>
+                <ul>
+                <li> 
+                    <a href="index.html" class="">Home</a>
+                </li>
+                <li>
+                    <a href="contact3.html" class="">Contact us</a>
+                </li>
+                <li>
+                    <a href="about-us.html" class="">About us</a>
+                </li> 
+                <li>
+                    <a href="gallaryFull.html" class="">Gallery</a>
+                </li>
+                <li>
+                    <a href="login.html" class="">Log in/Signup</a>
+                </li>
+                </ul>
+        </div>
+    </header>
+    
+    <div class="main">
+        <div class="left-home">
+            <h1 class="fresh">Get Fresh<span>Food</span><br>in a Easy Way</h1>
+            <div class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Esse reiciendis quaerat nobis<br>deleniti amet non inventore. 
+                Reprehenderit recusandae voluptatibus minus tenetur itaque.</div>
+
+                
+            <div class="order"><a href="menu.html"><button class="btn-order">Order Now &gt</button></a></div>
+        </div>
+        <div class="right-home">
+            <img src="Images/main_img.png" class="mainImage">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Location</h4>
+                    <ul>
+                        <li><a href="#">Sri Lanka</a></li>
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Italy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fa fa-facebook face"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <script>
+        const ham=document.querySelector(".hamburger");
+        ham.addEventListener("click", function(){
+           let navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

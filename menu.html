@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Menu</title>
+
+    <!-- footer fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="footer.css">
+   
+</head>
+<body>
+
+    <header id="newHeader">
+        <div class="logo" id="newLogo">Bhook Lagi</div>
+        <div class="hamburger" id="getHam">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-bar" id = "hello">
+            <ul>
+                <ul>
+                <li> 
+                    <a href="index.html" id="nice" class="">Home</a>
+                </li>
+                <li>
+                    <a href="contact3.html" id="nice" class="">Contact us</a>
+                </li>
+                <li>
+                    <a href="about-us.html" id="nice" class="">About us</a>
+                </li> 
+                <li>
+                    <a href="gallaryFull.html" id="nice" class="">Gallery</a>
+                </li>
+                <li>
+                    <a href="login.html" id="nice" class="">Log in/Signup</a>
+                </li>
+                </ul>
+        </div>
+    </header>
+
+	<div class="menu-top">
+		<h1>Food Menu</h1>
+		<input type="text" id="search" placeholder="Search...">
+    </div>
+	<main>
+		<div class="item">
+			<img src="Images/burger.jpg" alt="food item">
+			<h2>Burger</h2>
+			<p>Burger.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+		<div class="item">
+			<img src="Images/chowmein.jpg" alt="food item">
+			<h2>Chowmein</h2>
+			<p>Chowmein.</p>
+			<span class="price">$15.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+		<div class="item">
+			<img src="Images/bread-omelette.jpg" alt="food item">
+			<h2>Bread Omelette</h2>
+			<p>Omelette.</p>
+			<span class="price">$8.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+		<div class="item">
+			<img src="Images/momos.jpg" alt="food item">
+			<h2>Fried Momos</h2>
+			<p>Fried Momos.</p>
+			<span class="price">$12.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+		<div class="item">
+			<img src="Images/club-sandwich.jpg" alt="food item">
+			<h2>Club Sandwich</h2>
+			<p>Club Sandwich.</p>
+			<span class="price">$20.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+		<div class="item">
+			<img src="Images/egg-wrap.jpg" alt="food item">
+			<h2>Egg Wrap</h2>
+			<p>Egg Wrap.</p>
+			<span class="price">$18.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+        <div class="item">
+			<img src="Images/chilli-potato.jpg" alt="food item">
+			<h2>Chilli Potato</h2>
+			<p>Chilli Potato.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+        <div class="item">
+			<img src="Images/French-fries.jpg" alt="food item">
+			<h2>French Fries</h2>
+			<p>French Fries.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+        <div class="item">
+			<img src="Images/cold-drink.jpg" alt="food item">
+			<h2>Cold Drinks</h2>
+			<p>Soft Drink of your choice.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+        <div class="item">
+			<img src="Images/tea2.jpg" alt="food item">
+			<h2>Tea</h2>
+			<p>Tea.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+
+        <div class="item">
+			<img src="Images/coffee.jpg" alt="food item">
+			<h2>Coffee</h2>
+			<p>Coffee.</p>
+			<span class="price">$10.00</span>
+			<button class="buy-now">Buy Now</button>
+		</div>
+	</main>
+
+
+    <!-- footer -->
+    <footer id="footer-below">
+        <div class="footer-content">
+            <p>Bhook Lagi &copy;2023. All rights reserved</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;<a href="#">Bhook Lagi</a>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact3.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+        </div>
+
+    </footer>
+    <!-- footer ends -->
+
+	<script src="script.js"></script>
+    <script>
+        // Get the search input element
+const searchInput = document.getElementById('search');
+
+// Get all the item elements
+const items = document.querySelectorAll('.item');
+
+// Add an event listener to the search input element
+searchInput.addEventListener('input', function() {
+    // Get the search query
+    const searchQuery = searchInput.value.toLowerCase();
+
+    // Loop through all the item elements
+    for (const item of items) {
+        // Get the item name
+        const itemName = item.querySelector('h2').textContent.toLowerCase();
+
+        // Hide or show the item depending on whether it matches the search query
+        if (itemName.includes(searchQuery)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    }
+});
+
+
+    const ham=document.querySelector(".hamburger");
+    ham.addEventListener("click", function(){
+       let navBar=document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    })
+
+    </script>
+</body>
+</html>

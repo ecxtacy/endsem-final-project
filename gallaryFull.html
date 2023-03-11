@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+     <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200;500;600;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- footer fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="gallaryFull.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Bhook Lagi</div>
+        <div class="hamburger">
+            <div class="line" id="getHam"></div>
+            <div class="line" id="getHam"></div>
+            <div class="line" id="getHam"></div>
+        </div>
+        <div class="nav-bar" id = "hello">
+            <ul>
+                <ul>
+                <li> 
+                    <a href="index.html" class="ok">Home</a>
+                </li>
+                <li>
+                    <a href="contact3.html" class="ok">Contact us</a>
+                </li>
+                <li>
+                    <a href="about-us.html" class="ok">About us</a>
+                </li> 
+                <li>
+                    <a href="gallaryFull.html" class="ok">Gallery</a>
+                </li>
+                <li>
+                    <a href="login.html" class="ok">Log in/Signup</a>
+                </li>
+                </ul>
+        </div>
+    </header>
+    <div class="back">
+        <div class="left"><img src="Gallary/cake.jpg" class="leftImg"></div>
+        <div class="right">
+            <h1 class="upperText" data-text="OUR GALLERY">OUR GALLERY</h1>
+            <p class="upperDesc">Welcome to our food gallery! Feast your eyes on a delectable array of dishes,<br> carefully crafted and beautifully presented to tantalize your taste buds.</p>
+        </div>
+    </div>
+    <div class="secondRow">
+        <div class="divLowerText">
+            <h2 class="lowerText">SEE BELOW</h2>
+        </div>
+        <div class="divLowerDesc">
+            <p class="lowerDesc">Whether you're hosting a corporate event, wedding, or intimate gathering,<br> we can customize our menu to meet your specific needs and preferences.<br> Browse through our gallery to get inspired and contact us to start planning your next unforgettable culinary experience.</p>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="item">
+            <img src="Gallary/gallary_1.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_2.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_3.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_4.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_5.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_6.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_1.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_2.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_3.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_4.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_5.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_6.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_1.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_2.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_3.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_4.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_5.jpg">
+        </div>
+        <div class="item">
+            <img src="Gallary/gallary_6.jpg">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Bhook Lagi &copy;2023. All rights reserved</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;<a href="#">Bhook Lagi</a>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact3.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+        </div>
+
+    </footer>
+    <!-- footer ends -->
+
+    <script>
+        const ham=document.querySelector(".hamburger");
+        ham.addEventListener("click", function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
